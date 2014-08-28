@@ -238,7 +238,7 @@ whether we might be able to beat the best clique found so far.
     We can explore subtrees in parallel, by allocating subtrees to workers. But the problem is
     \textbf{irregular}: some subproblems may be orders of magnitude larger than others.  We solve
     this by creating a queue with \textbf{many more subproblems} than we have workers, like in
-    \textbf{embarrasingly parallel search}.
+    Embarrasingly Parallel Search.
 
     \bigskip
 
@@ -260,14 +260,14 @@ whether we might be able to beat the best clique found so far.
     \end{center}
 
     Splitting further down the tree improves balance, but often gives worse results. This is partly
-    due to overheads, but is also because \textbf{heuristics are weakest} at the top of search, and
-    \textbf{splitting high introduces diversity}.  We can get the best of both worlds, and reduce
+    due to overheads, but is also because \textbf{heuristics are weakest at the top of search}, and
+    splitting high introduces diversity.  We can get the best of both worlds, \emph{and} reduce
     the total number of queue operations, by splitting high first for diversity, and then
-    \textbf{resplitting later} for balance.
+    resplitting later for balance.
 }
 
 \block{Flexibility and Related Problems}{
-    Dedicated clique algorithms are \textbf{surprisingly flexible}. Sophisticated MIP models cannot
+    Dedicated clique algorithms are surprisingly flexible. Sophisticated MIP models cannot
     be adapted for the \textbf{maximum labelled clique} problem (left), but clique algorithms can
     be, and are very effective in practice. We can also incorporate symmetry removal, for the
     \textbf{maximum balanced induced biclique} problem (center), and dominance removal, for the
@@ -390,7 +390,7 @@ usually works reasonably well. But does this work in theory?
 
 \bigskip
 
-How do symmetries interact with parallelism?
+How do symmetries interact with parallel search algorithms?
 }
 
 \def\bysame{\leavevmode\hbox to3em{\hrulefill}\thinspace}
