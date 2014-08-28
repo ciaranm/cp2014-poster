@@ -5,15 +5,11 @@
 \usepackage{complexity}
 \usepackage{wrapfig}
 \usepackage{microtype}
-\usepackage{enumitem}
-\usepackage{gnuplot-lua-tikz}          % graphs
+\usepackage{gnuplot-lua-tikz}
 
 \usepackage{lmodern}
 \renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
-
-\usetikzlibrary{arrows, shadows, calc, positioning, decorations, decorations.pathmorphing,
-    decorations.pathreplacing, patterns, tikzmark, fit}
 
 \title{Solving Hard Graph Problems in Parallel}
 \author{Ciaran McCreesh and Patrick Prosser}
@@ -34,6 +30,8 @@
     \end{tikzpicture}
 }
 
+% University of Glasgow standard colours
+
 \definecolor{uofgblue}{rgb}{0, 0.321569, 0.533333}
 \colorlet{uofgblue20}{uofgblue!20!white}
 \colorlet{uofgblue40}{uofgblue!40!white}
@@ -47,18 +45,6 @@
 \definecolor{uofgtlightgreen}{rgb}{0.615686, 0.788235, 0.729412}
 \definecolor{uofgtyellow}{rgb}{0.85098, 0.827451, 0.643137}
 \definecolor{uofgtorange}{rgb}{0.784314, 0.694118, 0.545098}
-
-\tikzset{edge/.style={line width=3pt, color=uofgstone40}}
-\tikzset{bedge/.style={line width=3pt}}
-\tikzset{edgel1/.style={line width=3pt, color=uofgblue}}
-\tikzset{edgel2/.style={line width=3pt, color=uofgblue40}}
-\tikzset{edgel3/.style={line width=3pt, color=uofgtorange}}
-\tikzset{edgel4/.style={line width=3pt, color=uofgtdarkgreen}}
-
-\colorlet{gp lt color 0}{uofgblue}
-\colorlet{gp lt color 1}{uofgblue60}
-\colorlet{gp lt color 2}{uofgblue20}
-\colorlet{gp lt color 3}{uofgtorange}
 
 \definecolorstyle{UofG}{
 }{
@@ -86,11 +72,26 @@
 
 \usetheme{Autumn}
 \usecolorstyle{UofG}
+
 \tikzposterlatexaffectionproofoff
 
 \useblockstyle[bodyverticalshift=-1cm, roundedcorners=1]{Default}
 
-\setlist[itemize]{leftmargin=*}
+% Styles for drawings
+
+\tikzset{edge/.style={line width=3pt, color=uofgstone40}}
+\tikzset{bedge/.style={line width=3pt}}
+\tikzset{edgel1/.style={line width=3pt, color=uofgblue}}
+\tikzset{edgel2/.style={line width=3pt, color=uofgblue40}}
+\tikzset{edgel3/.style={line width=3pt, color=uofgtorange}}
+\tikzset{edgel4/.style={line width=3pt, color=uofgtdarkgreen}}
+
+% Colours for the graph lines
+
+\colorlet{gp lt color 0}{uofgblue}
+\colorlet{gp lt color 1}{uofgblue60}
+\colorlet{gp lt color 2}{uofgblue20}
+\colorlet{gp lt color 3}{uofgtorange}
 
 \begin{document}
 \maketitle
