@@ -19,11 +19,10 @@
 \settitle{
     \begin{tikzpicture}
         \node (T) [inner sep=0pt] {\begin{minipage}{\linewidth}
-                \centering
                 \color{titlefgcolor}
-                {\bfseries \Huge \@title \par}
+                {\bfseries \Huge \hspace{10mm}\@title \par}
                 \vspace*{1em}
-                {\Large {\bfseries \@author} \par \@institute \par}
+                {\Large {\bfseries \hspace{10mm}\@author}, \@institute}
         \end{minipage}};
 
         \node at (T.east) [anchor=center, inner sep=0pt, xshift=-8cm] {\@titlegraphic};
