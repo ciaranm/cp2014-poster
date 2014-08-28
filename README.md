@@ -1,4 +1,5 @@
-cp2014-poster
-=============
+CP 2014 Poster
+==============
 
-Poster for CP 2014
+My poster for CP 2014, http://cp2014.a4cp.org/ .
+
